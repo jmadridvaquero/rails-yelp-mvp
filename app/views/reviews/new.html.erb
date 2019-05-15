@@ -1,0 +1,8 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+
+   <%= f.input :rating %>
+  
+    <%= f.submit "add a review", method: :post, data: { confirm: "You sure of this? you won't be able to remove it later without an admin" }, class: "btn btn-primary" %>
+<% end %>
+
